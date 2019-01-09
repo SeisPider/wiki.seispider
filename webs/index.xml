@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/webs/</link>
+    <description>Recent content in Web on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 10:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/webs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Booksmarks</title>
+      <link>http://wiki.seispider.top/webs/bookmark/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/webs/bookmark/</guid>
+      <description>[TOC]
+Bookmarks bar Latex LaTeX - 维基教科书，自由的教学读本
+First_Latex - Online LaTeX Editor ShareLaTeX
+Beamer - ShareLaTeX, Online LaTeX Editor
+Greek Alphabet in LaTeX
+\normalsize \textsc{Module - Overleaf
+mohu.org/info/symbols/symbols.htm
+Detexify LaTeX handwritten symbol recognition
+python MSNoise 1.4 Released ! | MSNoise
+Anaconda Distribution | Continuum Analytics: Documentation
+Overview — Python 3.5.2 documentation
+分享几个实用的python命令行工具 | 阿小信的博客
+The Hitchhiker’s Guide to Python! — The Hitchhiker&amp;rsquo;s Guide to Python
+Matplotlib 教程 | 始终</description>
+    </item>
+    
+  </channel>
+</rss>

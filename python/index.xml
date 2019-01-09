@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/python/</link>
+    <description>Recent content in Python on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 10:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fundamental Python</title>
+      <link>http://wiki.seispider.top/python/funda_python/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/python/funda_python/</guid>
+      <description>迭代和解析 列表嵌套循环 [ expression for target1 in iterables [if condition1] for target2 in iterables [if condition2] for target3 in iterables [if condition3] ......] 例如:
+&amp;gt;&amp;gt;&amp;gt; [(x, y, z) for x in range(4) if x % 2 ==0 for y in range(4，9) if z % 2 ==0 for z in range(9，11) if z % 2 ==0] [(0, 4, 10), (0, 6, 10), (0, 8, 10), (2, 4, 10), (2, 6, 10), (2, 8, 10)] 列表解析和map 以下三种方式均能获得myfile中字符并去除&#39;\n&#39;</description>
+    </item>
+    
+    <item>
+      <title>pep8</title>
+      <link>http://wiki.seispider.top/python/pep8/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/python/pep8/</guid>
+      <description>PEP8是Python官方给出的编程规范，用以指导Python代码写作。
+Pep8检查工具 autopep8可用于检查代码中与PEP8不相符的部分，通过指定-i选项可直接修改源代码。
+pep8仅用于检测与PEP8不相符的代码部分并输出检测报告。
+pyflakes可检测Python源码中简单的语法错误。
+Pylint可同时检测Pep8的源码风格与语法错误。但对于一般小型脚本而言，检测标准过于严苛。
+安装代码：
+pip install -upgrade autopep8 pep8 pyflakes  sudo yum install pylint  PEP8风格介绍 完整的风格介绍参见：
+PEP8&amp;ndash;Style Guide for Python Code
+PEP8&amp;ndash;编程规范中文指南
+本文仅记录较常错误的项。
+续行缩进 悬挂缩进准则：第一行不应该包括参数，并且在续行中需要再缩进一级以便清楚表示。 正确范例：
+# 同开始分界符(左括号)对齐 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行多缩进一级以同其他代码区别 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) # 悬挂缩进需要多缩进一级 foo = long_function_name( var_one, var_two, var_three, var_four) 错误的范例：
+# 采用垂直对齐时第一行不应该有参数 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行并没有被区分开，因此需要再缩进一级 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) 多行if语句 # 不采用额外缩进 if (this_is_one_thing and that_is_another_thing): do_something() # 增加一行注释，在编辑器中显示时能有所区分 # supporting syntax highlighting.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,169 @@
+[
+{
+	"uri": "http://wiki.seispider.top/geek/",
+	"title": "GEEK",
+	"tags": ["GEEK"],
+	"description": "",
+	"content": "This sub-directory saves GEEK related wikis\n"
+},
+{
+	"uri": "http://wiki.seispider.top/git/",
+	"title": "GIT",
+	"tags": ["Git"],
+	"description": "",
+	"content": "This sub-directory saves Git related wikis\n"
+},
+{
+	"uri": "http://wiki.seispider.top/linux/",
+	"title": "Linux",
+	"tags": ["Linux"],
+	"description": "",
+	"content": "This sub-directory saves Linux related wikis\n"
+},
+{
+	"uri": "http://wiki.seispider.top/python/",
+	"title": "Python",
+	"tags": ["Python"],
+	"description": "",
+	"content": "This sub-directory saves Python related wikis\n"
+},
+{
+	"uri": "http://wiki.seispider.top/webs/",
+	"title": "Web",
+	"tags": ["Web"],
+	"description": "",
+	"content": "This sub-directory saves Web related wikis\n"
+},
+{
+	"uri": "http://wiki.seispider.top/linux/shell/",
+	"title": "Several shell skills",
+	"tags": [],
+	"description": "",
+	"content": " Awk related  在 awk 中使用 shell变量: 设置 awk 变量传导 shell a=1 echo $a awk -v b=\u0026quot;$a\u0026quot; 'BEGIN {print b}'   "
+},
+{
+	"uri": "http://wiki.seispider.top/geek/vimconfig/",
+	"title": "适用于 Python 的 Vim 配置",
+	"tags": [],
+	"description": "",
+	"content": " 首先，安装 YouCompleteMe 要求 Vim 版本号在7.4.1578，然而 yum 源中的 Vim 版本为7.3.160。因此自行编译Vim。\nVim8 的编译  克隆仓库获取最新 Vim 版本,本地版本在src中。\ngit clone https://github.com/vim/vim.git  参考网页编译更新 Vim 版本\n  配置 Vim 基本属性 \u0026quot;去掉vi的一致性\u0026quot; set nocompatible \u0026quot;显示行号\u0026quot; set number set relativenumber \u0026quot; 隐藏滚动条\u0026quot; set guioptions-=r set guioptions-=L set guioptions-=b \u0026quot;隐藏顶部标签栏\u0026quot; set showtabline=0 \u0026quot;设置字体\u0026quot; set guifont=Monaco:h13 syntax on \u0026quot;开启语法高亮\u0026quot; set nowrap \u0026quot;设置不折行\u0026quot; set fileformat=unix \u0026quot;设置以unix的格式保存文件\u0026quot; set cindent \u0026quot;设置C样式的缩进格式\u0026quot; set tabstop=4 \u0026quot;设置table长度\u0026quot; set shiftwidth=4 \u0026quot;同上\u0026quot; set showmatch \u0026quot;显示匹配的括号\u0026quot; set scrolloff=5 \u0026quot;距离顶部和底部5行\u0026quot; set laststatus=2 \u0026quot;命令行为两行\u0026quot; set fenc=utf-8 \u0026quot;文件编码\u0026quot; set backspace=2 set mouse=a \u0026quot;启用鼠标\u0026quot; set selection=exclusive set selectmode=mouse,key set matchtime=5 set ignorecase \u0026quot;忽略大小写\u0026quot; set incsearch set hlsearch \u0026quot;高亮搜索项\u0026quot; set noexpandtab \u0026quot;不允许扩展table\u0026quot; set whichwrap+=\u0026lt;,\u0026gt;,h,l set autoread set cursorline \u0026quot;突出显示当前行\u0026quot; set cursorcolumn \u0026quot;突出显示当前列\u0026quot; set colorcolumn=80  配置 Vim 插件  在 .vimrc 文件中配置 Vundle 安装插件  filetype off set rtp+=~/.vim/bundle/Vundle.vim call vundle#begin() Plugin 'VundleVim/Vundle.vim' \u0026quot;git interface Plugin 'tpope/vim-fugitive' \u0026quot;filesystem Plugin 'scrooloose/nerdtree' Plugin 'jistr/vim-nerdtree-tabs' Plugin 'kien/ctrlp.vim' \u0026quot;html \u0026quot; isnowfy only compatible with python not python3 Plugin 'isnowfy/python-vim-instant-markdown' Plugin 'jtratner/vim-flavored-markdown' Plugin 'suan/vim-instant-markdown' Plugin 'nelstrom/vim-markdown-preview' \u0026quot;python sytax checker Plugin 'nvie/vim-flake8' Plugin 'vim-scripts/Pydiction' Plugin 'vim-scripts/indentpython.vim' Plugin 'scrooloose/syntastic' \u0026quot;auto-completion stuff \u0026quot;Plugin 'klen/python-mode' Plugin 'Valloric/YouCompleteMe' Plugin 'klen/rope-vim' \u0026quot;Plugin 'davidhalter/jedi-vim' Plugin 'ervandew/supertab' \u0026quot;\u0026quot;code folding Plugin 'tmhedberg/SimpylFold' \u0026quot;Colors!!! Plugin 'altercation/vim-colors-solarized' Plugin 'jnurmine/Zenburn' Plugin 'Lokaltog/vim-powerline' call vundle#end() filetype plugin indent on   进入 Vim 中并执行命令 :VundleInstall 或直接在命令行键入vim +PluginInstall +qall 以安装插件  YouCompleteMe 配置 仅利用 Vundle 安装 YCM 并不能生效，需要对 YCM 进行编译配置。 - 编译 YCM\ncd ~/.vim/bundle/YouCompleteMe ./install.py   将模板配置文件中提取出来并进行设置，参考  cp ~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py   并在 .vimrc 中添加语句\nlet g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'  设置颜色主题  从Github或src/vim-colors-solarized 中获取颜色配置文件 在 .vimrc 中添加配置  "
+},
+{
+	"uri": "http://wiki.seispider.top/webs/bookmark/",
+	"title": "Booksmarks",
+	"tags": [],
+	"description": "",
+	"content": " [TOC]\nBookmarks bar Latex LaTeX - 维基教科书，自由的教学读本\nFirst_Latex - Online LaTeX Editor ShareLaTeX\nBeamer - ShareLaTeX, Online LaTeX Editor\nGreek Alphabet in LaTeX\n\\normalsize \\textsc{Module - Overleaf\nmohu.org/info/symbols/symbols.htm\nDetexify LaTeX handwritten symbol recognition\npython MSNoise 1.4 Released ! | MSNoise\nAnaconda Distribution | Continuum Analytics: Documentation\nOverview — Python 3.5.2 documentation\n分享几个实用的python命令行工具 | 阿小信的博客\nThe Hitchhiker’s Guide to Python! — The Hitchhiker\u0026rsquo;s Guide to Python\nMatplotlib 教程 | 始终\nPyPI - the Python Package Index : Python Package Index\nobspy.signal.filter.envelope - Nullege Python Samples\n2. Built-in Functions — Python 2.7.13 documentation\nGoogle Python Style Guide\nDocumentation scikit-learn: machine learning in Python — scikit-learn 0.18.1 documentation\nParticle swarm optimization (PSO) with constraint support — pyswarm 0.6 documentation\nJulia Documentation — Julia Language 0.5.1-pre documentation\nPython strftime reference\nPEP 8 \u0026ndash; Style Guide for Python Code | Python.org\n译者前言 — Sphinx 使用手册\n2. Built-in Functions — Python 3.5.2 documentation\nInstalling the SciPy Stack — SciPy.org\nGeoSource Contact – China Geophysical Reference Model\n2016年（首届）“中国区域地震学参考模型”学术交流会 - 中国科学技术大学网络课堂\nIRIS - Incorporated Research Institutions for Seismology\nCIDER\nGlgoo 学术搜索\n多镜像谷搜\nGeology\n你写论文时发现了哪些神网站？ - 知乎\nREM Web Page\nMendeley Feed\nCrustal Model CRUST1 page\n研究成果\nRunning the scripts and examples - Web Service Fetch scripts - IRIS SeisCode\n5. Retrieving Data from Data Centers — ObsPy Documentation (1.0.2)\nGeneralReference\nIRIS: rdseed Request\nSOD - Demo\nVertical component coherence and scaling (continuous)\nWaves, Seismometers, and Seismograms\nFDSN:\nInternational Seismological Centre\nWebDC3 at eida.gfz-potsdam.de\nNew Codes for Ambient Seismic Noise Analysis\nEarthquake Center\nseissuite 0.1.3 : Python Package Index\nIRIS: Data Services Products: Noise Toolkit\nESS 522: Home Page\nObsPy Library Reference — ObsPy Documentation (1.0.2)\n国家测震台网地震波形数据管理与共享平台\nIRIS DMC Google Map Service Usage\nBRTT | Antelope 5.6 Release Notes\niLab - Software\nNumPy Reference — NumPy v1.12 Manual\nProject SEIZMO - A Matlab \u0026amp; Octave Toolbox for Earthquake Seismology\nmatplotlib Fast Fourier Transform | Examples | Plotly\nJPlotResp Installation\nEarthScope USArray Data Management Short Course\nIRIS DMC Google Map Service:\nHooke\u0026rsquo;s law - Wikipedia\ngif format 320x240: Topics by WorldWideScience.org\nWEAK ANISOTROPY APPROXIMATION\nHome Page\npso\nSci-Hub: removing barriers in the way of science\nICS - Chart/Time Scale\nMSNoise | A Python Package for Monitoring Seismic Velocity Changes using Ambient Seismic Noise\nNA home page\nComputer Programs in Seismology Tutorials\nComputational Infrastructure for Geodynamics\nEarth Gravitational Model 2008 (EGM2008)\nBlog 百度搜索引擎提交入口\n控制台\n域名控制台-解析设置\nSeisPider\nMarkDown: 易读易写的纯文本格式标记语言 - MarkDown中文网\nConfiguration | Hexo\n开始使用 Coding Pages\nCmd Markdown 简明语法手册\nHelpers | Hexo\nHexo 主题制作指南 - 推酷\n使用Hexo搭建个人博客 - 简书\nSeisPider - SeisPider - Coding.net\nFront-matter | Hexo\n(275) Inoreader - 全部文章\n方案4：混合 · Gitbook学习笔记\n仪表盘 ‹ Wen\u0026rsquo;s Geogroup — WordPress\nFont Awesome \u0026amp; Accessibility\nSimiki\n部署 - Simiki\nGMT RGB颜色查询对照表\nQuick Reference — GMT 5.3.0 documentation\ncpt-city color tables (mglib)\nDesign ideas and goals for the GMT Python interface | Leonardo Uieda\nExtRead 如何在论文中画出漂亮的插图？ - 知乎\n陶哲轩\nWin10企业版永久激活方法|Win10系统企业版如何免费永久激活？-教程-系统大全\nLinggle\nNetspeak – Search for Words\nAmazing Synonyms, Amazing Antonyms | Thesaurus.com\nNIPPON COLORS - 日本の伝統色\nSVG to PNG – Convert SVG files to PNG Online\nInoreader - All articles\nSibbell\nLinux 本博使用的vim(gvim)相关插件整理 | Vimer的程序世界\nSearching | Vim Tips Wiki | Fandom powered by Wikia\nRGB颜色对照表\nLinux Packages Search - pkgs.org\nGit - git-clone Documentation\nHelp - Docker Hub\nPicSoft MetaPost\nDownload - blender.org - Home of the Blender project - Free and Open 3D Creation Software\ngitbook GitHub 集成 | GitBook 简明教程\n网页制作 Bootstrap中文网\nThe Caddyfile - Caddy\nChoose a License\nOverview — Sphinx 1.5.4 documentation\nAcademic\nData_Download IRIS: DMC Web Services\nSOD - Network Tutorial\nGlobal Centroid Moment Tensor Catalog\nObspy ObsPy Tutorial — ObsPy Documentation (1.0.3)\nVisualization My prezis | Prezi\nGNU Octave\nPersonal_Book Pandoc - About pandoc\ngithub Astral\nRecent releases · Sibbell\nLatex排版\nWPSMap - World Personal Seismometer Map\nLearn Python for Data Science Online | DataCamp\n"
+},
+{
+	"uri": "http://wiki.seispider.top/linux/centos-grub/",
+	"title": "CentOS recover grub",
+	"tags": [],
+	"description": "",
+	"content": " 恢复Windows开机引导 在已装有Windows 10的电脑上装配CentOS 7后重启计算机发现没有windows 10 启动项\n解决步骤:  安装utfs-3g以识别和读取windows文件系统  wget -O /etc/yum.repos.d/epel.repo http:mirrors.aliyun.com/repo/epel-7.repo #加源 sudo yum update; sudo yum install ntfs3g  系统自动识别和添加启动项(需root权限)  grub2-mkconfig -o /boot/grubs/grub.cfg  restart即可恢复windows启动项  恢复CentOS 7开机引导 在已装有CentOS 7的计算机上发现没有CentOS 7启动项\n解决步骤：  利用U盘进入CentOS安装界面，开机选择trouble shooting 疑难解答选项\n 选择rescue a centos system,按tab后选择continue,选择ok\n 进入命令行界面：\nchroot/mnt/sysimage /sbin/grub2-install/dev/sda #安装grub2  restart即恢复CentOS 7开机引导，Windows的引导即可按照前节所述恢复\n  修改历史：  2016-12-05：参考百度经验 的初次版本  "
+},
+{
+	"uri": "http://wiki.seispider.top/geek/pdf_combination/",
+	"title": "Combining PDFs at the command line",
+	"tags": [],
+	"description": "",
+	"content": " Combining multiple PDFs into one file is easy. Just turn to the command line and run Ghostscript. It\u0026rsquo;s a quick and effective way to mash PDF files together.\nIntroduction There may be times for whatever reason, that you need to mash a bunch of PDFs into a single file. While there are a number of Linux utilities \u0026ndash; both command line and graphical \u0026ndash; one of the quickest and most efficient ways to do this is with a piece of software called Ghostscript.\nHaven\u0026rsquo;t heard of Ghostscript? If that\u0026rsquo;s you, then it\u0026rsquo;s not surprising. Ghostscript is one of those little-known, unsung tools which you come to appreciate when you have to use it. Ghostscript is a command line application that lets you view, print, and (to a small degree) manipulate Postscript and PDF files. You can also use it to convert those files to other formats. The best part is that Ghostscript comes bundled with most Linux distributions. You don\u0026rsquo;t need to install any new software.\nCombining PDFs Just open a terminal window and type something like the following:\ngs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf pdffile1.pdf pdffile2.pdf  Here’s what all of those options mean:\n -gs \u0026ndash; starts Ghostscript -dBATCH \u0026ndash; once the PDF files have been combined, stop running. If you don’t include this option, Ghostscript will just keep running -dNOPAUSE \u0026ndash; forces Ghostscript to process each file without pausing for confirmation -q \u0026ndash; stops Ghostscript from displaying messages while it works -sDEVICE=pdfwrite \u0026ndash; uses Ghostscript\u0026rsquo;s PDF writer to work on the files -sOutputFile=output.pdf \u0026ndash; saves the resulting PDF file with the name that you specified, for example output.pdf Obviously, pdffile1.pdf and pdffile2.pdf are the names of the PDF files that you want to combine. You’re not limited to two files. And you’re not limited to the commands that are listed above. You can add any of Ghostscript’s PDF options to the command line — see the Ghostscript documentation for details.  Drawbacks Using Ghostscript has its drawbacks. It spits out a bare bones PDF. And that file will be large. By default, Ghostscript doesn\u0026rsquo;t compress PDFs. To get around that, you really need to use some of Ghostscript\u0026rsquo;s PDF options,\nAs well, some people may find typing long, dense strings of options at the command line to be a bit of a chore.\nSaving keystrokes You can avoid having to type a lot of text every time you want to combine PDFs by creating a command that encapsulates all of the Ghostscript options that you want to use. To do this, open the file .bashrc (found in your /home directory) in a text editor. Then, add the following at the end of the file:\nalias pdfmerge='gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=./output.pdf'  Again, you\u0026rsquo;re not limited to the command string above. You can use any of Ghostscript\u0026rsquo;s PDF options.\nWhen you want to combine PDF files, just type pdfmerge followed by the names of the files that you want to mash together. The resulting file will be named output.pdf, and will be saved to your /home directory.\nFinal thoughts While you might only use this feature rarely, Ghostscript\u0026rsquo;s ability to combine PDF files is quick, efficient, and effective. It just demonstrates how powerful the command line can be.\n"
+},
+{
+	"uri": "http://wiki.seispider.top/python/funda_python/",
+	"title": "Fundamental Python",
+	"tags": [],
+	"description": "",
+	"content": " 迭代和解析 列表嵌套循环 [ expression for target1 in iterables [if condition1] for target2 in iterables [if condition2] for target3 in iterables [if condition3] ......] 例如:\n\u0026gt;\u0026gt;\u0026gt; [(x, y, z) for x in range(4) if x % 2 ==0 for y in range(4，9) if z % 2 ==0 for z in range(9，11) if z % 2 ==0] [(0, 4, 10), (0, 6, 10), (0, 8, 10), (2, 4, 10), (2, 6, 10), (2, 8, 10)] 列表解析和map 以下三种方式均能获得myfile中字符并去除'\\n'\n\u0026gt;\u0026gt;\u0026gt;[line.rstrip() for line in open(\u0026#39;myfile\u0026#39;).readlines()] [\u0026#39;aaa\u0026#39;, \u0026#39;bbb\u0026#39;, \u0026#39;ccc\u0026#39;] \u0026gt;\u0026gt;\u0026gt;[line.rstrip() for line in open(\u0026#39;myfile\u0026#39;)] [\u0026#39;aaa\u0026#39;, \u0026#39;bbb\u0026#39;, \u0026#39;ccc\u0026#39;] \u0026gt;\u0026gt;\u0026gt;list(map(lambda line: line.strip()), open(\u0026#39;myfile\u0026#39;)) [\u0026#39;aaa\u0026#39;, \u0026#39;bbb\u0026#39;, \u0026#39;ccc\u0026#39;] 生成器 生成器表达式就与列表解析的表达式类似\n\u0026gt;\u0026gt;\u0026gt;G = (x ** 2 for x in range(4)) \u0026lt;generator object \u0026lt;genexpr\u0026gt; at 0x7fd3836308c0\u0026gt; \u0026gt;\u0026gt;\u0026gt;next(G) 0 \u0026gt;\u0026gt;\u0026gt;next(G) 1 \u0026gt;\u0026gt;\u0026gt;next(G) 4 \u0026gt;\u0026gt;\u0026gt;next(G) 9 \u0026gt;\u0026gt;\u0026gt;next(G) StopIteration Traceback (most recent call last) \u0026lt;ipython-input-11-380e167d6934\u0026gt; in \u0026lt;module\u0026gt;() ----\u0026gt; 1 next(G) StopIteration: 则列表解析即像一次性生成所有的迭代结果\n\u0026gt;\u0026gt;\u0026gt;[x ** 2 for x in range(4)] [0, 1, 4, 9] Python 3.0解析语法概括  对于集合，新的常量形式{1, 3, 2}等同于set([1, 3, 2]),并且新的集合解析语法{f(x) for x in S if P(x)}就像是生成器表达式set(f(x) for x in S if P(x))，其中f(x)是任意表达式。 对于字典，新的字典解析语法{key, val for (key,val) in zip(keys, vals)} 像dict(zip(keys, vals))形式一样工作，并且{x:f(x) for x in items}像生成器表达式dict((x,f(x)) for x in items)  函数与类 函数变量 关键字参数和默认参数的混合: def func(spam, eggs, toast=0, ham=0): print ((spam, eggs, toast, ham)) func(1, 2) # output: (1,2,0,0) func(1, ham=1, eggs=0) # output: (1, 0, 0, 1) func(toast=1, eggs=2, spam=3) # output: (3, 2, 1, 0) func(1, 2, 3, 4) # output: (1, 2, 3, 4)  关键字参数调用时，参数排列的位置并没有关系  收集参数 * 在函数定义中，在元组中收集不匹配的位置参数\ndef f(*args): print(args) 调用该函数时，Python将所有位置参数收集在新的元组中，并将这个元组赋予变量args。因它时一个一般的元组对象，能够索引或在一个for循环中进行步进。\nf() # output:() f(1) # o: (1,) f(1,2,3,4) # o: (1,2,3,4) ** 特性类似，但是只对关键字参数有效，将这些关键字参数传递给一个新的字典，这个字典将能够通过一般的字典工具进行处理。\ndef f(**args): print (args) f(a=2, b=2) # out={\u0026#39;a\u0026#39;=2, \u0026#39;b\u0026#39;=2}"
+},
+{
+	"uri": "http://wiki.seispider.top/git/fund-usage/",
+	"title": "Fundamental Usage",
+	"tags": [],
+	"description": "",
+	"content": " 版本回退  查看版本log\n$ git log --pretty=oneline 3628164fb26d48395383f8f31179f24e0882e1e0 append GPL  3628164fb26d48395383f8f31179f24e0882e1e0是版本号。\n 版本回退\n$ git reset --hard HEAD^  HEAD表示当前版本，HEAD^表示上一个版本，HEAD~100表示前100个版本。 或者\u0026ndash;hard后面可以加版本号。\n$ git reset --hard 3628164  写版本号前多少位没关系，关键是能够定位到只有一个版本。\n  Note:git reflog 记录了用户所有的操作。\n删除文件 通常利用rm删除了文件，此时可以有两种选择：\n 在版本库中删除文件git rm file 删错了，恢复文件git checkout --file git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。  从coding.net克隆仓库 git clone git@git.coding.net:SeisPider/repo_name.git"
+},
+{
+	"uri": "http://wiki.seispider.top/git/gitcommit/",
+	"title": "Git commits",
+	"tags": [],
+	"description": "",
+	"content": " Function of Commit message  Provide more historical information and readly for quickly checking development process. bash git log \u0026lt;last tag\u0026gt; HEAD --pretty=format:%s  Above commend can provide brief information of project Filter information in backtracking development history  git log \u0026lt;last release\u0026gt; HEAD --grep feature  Above commend can only check the new features Generate Change log directly based on commits.conventional-changelog  Format of Commit message Standard commits are consisted of tree components: Header, Body and Footer\n\u0026lt;type\u0026gt;(\u0026lt;scope\u0026gt;): \u0026lt;subject\u0026gt; // 空一行 \u0026lt;body\u0026gt; // 空一行 \u0026lt;footer\u0026gt;  Where Header necessary while body and footer are optional.\nHeader Components: type,scope,subject 1. type: type of commits\nfeat：新功能（feature） fix：fix bug docs：documentation style： 格式（不影响代码运行的变动) refactor：重构（即不是新增功能，也不是修改bug的代码变动） test：增加测试 chore：构建过程或辅助工具的变动   scope: region influenced by commit\n subject:brief description of purposes ``` Begin with initiative verbs\n  First letter in lower case\nwithout period\n## Body Detail descriptions of commits  More detailed explanatory text, if necessary. Wrap it to about 72 characters or so.\nFurther paragraphs come after blank lines.\n Bullet points are okay, too Use a hanging indent ``` More instroduction  Tool Commitizen is an efficient tool helping users to write good commits.\nInstallation Dependency: npm\nnpm install -g commitizen  Usage  go to root directory of your local git repository  npm init  After initiation, just run follow commend to apply commitizen for this repository  commitizen init cz-conventional-changelog --save --save-exact  Successfully installed, please use git cz rather than git commit  "
+},
+{
+	"uri": "http://wiki.seispider.top/geek/latex_notes/",
+	"title": "Latex Notes",
+	"tags": [],
+	"description": "",
+	"content": " Add a forced line break inside a table cell \\begin{tabular}{|c|c|c|} \\hline Foo bar \u0026amp; \\begin{tabular}[x]{@{}c@{}}Foo\\\\bar\\end{tabular} \u0026amp; Foo bar \\\\ \\hline \\end{tabular}  where x is either t, c, or b to force the desired vertical alignment.\nIn case this is needed in more than a couple of places, it\u0026rsquo;s better to define a command\n\\newcommand{\\specialcell}[2][c]{% \\begin{tabular}[#1]{@{}c@{}}#2\\end{tabular}}  so the table line before can be one of\nFoo bar \u0026amp; \\specialcell{Foo\\\\bar} \u0026amp; Foo bar \\\\ % vertically centered Foo bar \u0026amp; \\specialcell[t]{Foo\\\\bar} \u0026amp; Foo bar \\\\ % aligned with top rule Foo bar \u0026amp; \\specialcell[b]{Foo\\\\bar} \u0026amp; Foo bar \\\\ % aligned with bottom rule  Notice the @{} to suppress added space before and after the cell text.\nAdd multiple equations and number them \\begin{subequations}\\label{eq:litdiff} \\begin{align} \\rho v^2_p(\\theta) \u0026amp;= \\frac{1}{2} [ C_{33} + C_{44} + (C_{11} - C_{33})sin^2 \\theta + D(\\theta) ] \\label{eq:velocity_P_wave}\\\\ \\rho v^2_{SV}(\\theta) \u0026amp;= \\frac{1}{2} [ C_{33} + C_{44} + (C_{11} - C_{33})sin^2 \\theta - D(\\theta) ] \\label{eq:velocity_SV}\\\\ \\rho v^2_{SH}(\\theta) \u0026amp;= C_{66}sin^2(\\theta) + C_{44}cos^2 \\theta \\label{eq:velocity_SH} \\end{align} \\end{subequations} Add matrix \\begin{bmatrix} C_{11} \u0026amp; (C_{11}-2C_{66}) \u0026amp; C_{13} \u0026amp; 0 \u0026amp; 0 \u0026amp; 0\\\\ (C_{11}-2C_{66}) \u0026amp; C_{11} \u0026amp; C_{13} \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\\\ C_{13} \u0026amp; C_{13} \u0026amp; C_{33} \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \\\\ 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; C_{44} \u0026amp; 0 \u0026amp; 0 \\\\ 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; C_{44} \u0026amp; 0 \\\\ 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; 0 \u0026amp; C_{66} \\\\ \\end{bmatrix}  \\documentclass{article} \\usepackage{amsmath} \\begin{document} \\[ A = \\begin{matrix}\\begin{pmatrix}x \u0026amp; y\\end{pmatrix}\\\\\\mbox{}\\end{matrix} \\begin{pmatrix} a \u0026amp; b \\\\ c \u0026amp; d \\end{pmatrix} \\begin{pmatrix} x \\\\ y \\end{pmatrix} \\] \\end{document}  Latex font  \\tiny \\scriptsize \\footnotesize \\small \\normalsize \\large \\Large \\LARGE \\huge \\Huge  "
+},
+{
+	"uri": "http://wiki.seispider.top/geek/zsh_plugins/",
+	"title": "ZSH",
+	"tags": [],
+	"description": "",
+	"content": "本文可归纳和总结oh-my-zsh的使用。\nSeisMan基础性总结\n"
+},
+{
+	"uri": "http://wiki.seispider.top/python/pep8/",
+	"title": "pep8",
+	"tags": [],
+	"description": "",
+	"content": " PEP8是Python官方给出的编程规范，用以指导Python代码写作。\nPep8检查工具 autopep8可用于检查代码中与PEP8不相符的部分，通过指定-i选项可直接修改源代码。\npep8仅用于检测与PEP8不相符的代码部分并输出检测报告。\npyflakes可检测Python源码中简单的语法错误。\nPylint可同时检测Pep8的源码风格与语法错误。但对于一般小型脚本而言，检测标准过于严苛。\n安装代码：\npip install -upgrade autopep8 pep8 pyflakes  sudo yum install pylint  PEP8风格介绍 完整的风格介绍参见：\nPEP8\u0026ndash;Style Guide for Python Code\nPEP8\u0026ndash;编程规范中文指南\n本文仅记录较常错误的项。\n续行缩进 悬挂缩进准则：第一行不应该包括参数，并且在续行中需要再缩进一级以便清楚表示。 正确范例：\n# 同开始分界符(左括号)对齐 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行多缩进一级以同其他代码区别 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) # 悬挂缩进需要多缩进一级 foo = long_function_name( var_one, var_two, var_three, var_four) 错误的范例：\n# 采用垂直对齐时第一行不应该有参数 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行并没有被区分开，因此需要再缩进一级 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) 多行if语句 # 不采用额外缩进 if (this_is_one_thing and that_is_another_thing): do_something() # 增加一行注释，在编辑器中显示时能有所区分 # supporting syntax highlighting. if (this_is_one_thing and that_is_another_thing): # Since both conditions are true, we can frobnicate. do_something() # 在条件语句的续行增加一级缩进 if (this_is_one_thing and that_is_another_thing): do_something() 多行结束右圆/方/花括号可以单独一行书写，和上一行的缩进对齐：\nmy_list = [ 1, 2, 3, 4, 5, 6, ] result = some_function_that_takes_arguments( \u0026#39;a\u0026#39;, \u0026#39;b\u0026#39;, \u0026#39;c\u0026#39;, \u0026#39;d\u0026#39;, \u0026#39;e\u0026#39;, \u0026#39;f\u0026#39;, ) 也可以多行开始的第一个字符对齐：\nmy_list = [ 1, 2, 3, 4, 5, 6, ] result = some_function_that_takes_arguments( \u0026#39;a\u0026#39;, \u0026#39;b\u0026#39;, \u0026#39;c\u0026#39;, \u0026#39;d\u0026#39;, \u0026#39;e\u0026#39;, \u0026#39;f\u0026#39;, ) Imports  Imports应该分行写，而不是都写在一行：\n# 分开写 import os import sys # 不要像下面一样写在一行 import sys, os 或者写为：\nfrom subprocess import Popen, PIPE  Imports应该写在代码文件的开头，位于模块注释和文档字符串之后，模块全局变量和常量声明之前。 Imports应该按照下面的顺序分组来写：\n 标准库Imports\n 相关第三方Imports\n 本地应用/库的特定Imports\n  不同组的imports之前用空格隔开\n 推荐使用绝对(absolute)imports，因为这样通常更易读，在import系统没有正确配置（比如中的路径以sys.path结束）的情况下，也会有更好的表现（或者至少会给出错误信息）：  import mypkg.sibling from mypkg import sibling from mypkg.sibling import example  然而，除了绝对imports，显式的相对imports也是一种可以接受的替代方式。特别是当处理复杂的包布局(package layouts)时，采用绝对imports会显得啰嗦。  from . import sibling from .sibling import example  当从一个包括类的模块中import一个类时，通常可以这样写  from myclass import MyClass from foo.bar.yourclass import YourClass  如果和本地命名的拼写产生了冲突，应当直接import模块：  import myclass import foo.bar.yourclass  然后使用”myclass.MyClass”和”foo.bar.yourclass.YourClass”.  "
+},
+{
+	"uri": "http://wiki.seispider.top/",
+	"title": "",
+	"tags": [],
+	"description": "",
+	"content": "Welcome to my wiki!\n"
+},
+{
+	"uri": "http://wiki.seispider.top/categories/",
+	"title": "Categories",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/geek/",
+	"title": "Geek",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/git/",
+	"title": "Git",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/linux/",
+	"title": "Linux",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/python/",
+	"title": "Python",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/",
+	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "http://wiki.seispider.top/tags/web/",
+	"title": "Web",
+	"tags": [],
+	"description": "",
+	"content": ""
+}]

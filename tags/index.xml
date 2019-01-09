@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/tags/</link>
+    <description>Recent content in Tags on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 10:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Geek</title>
+      <link>http://wiki.seispider.top/tags/geek/</link>
+      <pubDate>Tue, 08 Jan 2019 10:36:24 +0200</pubDate>
+      
+      <guid>http://wiki.seispider.top/tags/geek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://wiki.seispider.top/tags/git/</link>
+      <pubDate>Tue, 08 Jan 2019 10:36:24 +0200</pubDate>
+      
+      <guid>http://wiki.seispider.top/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://wiki.seispider.top/tags/linux/</link>
+      <pubDate>Tue, 08 Jan 2019 10:36:24 +0200</pubDate>
+      
+      <guid>http://wiki.seispider.top/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://wiki.seispider.top/tags/python/</link>
+      <pubDate>Tue, 08 Jan 2019 10:36:24 +0200</pubDate>
+      
+      <guid>http://wiki.seispider.top/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Web</title>
+      <link>http://wiki.seispider.top/tags/web/</link>
+      <pubDate>Tue, 08 Jan 2019 10:36:24 +0200</pubDate>
+      
+      <guid>http://wiki.seispider.top/tags/web/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

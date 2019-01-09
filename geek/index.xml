@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GEEK on SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/geek/</link>
+    <description>Recent content in GEEK on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 10:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/geek/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>适用于 Python 的 Vim 配置</title>
+      <link>http://wiki.seispider.top/geek/vimconfig/</link>
+      <pubDate>Sat, 05 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/vimconfig/</guid>
+      <description>首先，安装 YouCompleteMe 要求 Vim 版本号在7.4.1578，然而 yum 源中的 Vim 版本为7.3.160。因此自行编译Vim。
+Vim8 的编译  克隆仓库获取最新 Vim 版本,本地版本在src中。
+git clone https://github.com/vim/vim.git  参考网页编译更新 Vim 版本
+  配置 Vim 基本属性 &amp;quot;去掉vi的一致性&amp;quot; set nocompatible &amp;quot;显示行号&amp;quot; set number set relativenumber &amp;quot; 隐藏滚动条&amp;quot; set guioptions-=r set guioptions-=L set guioptions-=b &amp;quot;隐藏顶部标签栏&amp;quot; set showtabline=0 &amp;quot;设置字体&amp;quot; set guifont=Monaco:h13 syntax on &amp;quot;开启语法高亮&amp;quot; set nowrap &amp;quot;设置不折行&amp;quot; set fileformat=unix &amp;quot;设置以unix的格式保存文件&amp;quot; set cindent &amp;quot;设置C样式的缩进格式&amp;quot; set tabstop=4 &amp;quot;设置table长度&amp;quot; set shiftwidth=4 &amp;quot;同上&amp;quot; set showmatch &amp;quot;显示匹配的括号&amp;quot; set scrolloff=5 &amp;quot;距离顶部和底部5行&amp;quot; set laststatus=2 &amp;quot;命令行为两行&amp;quot; set fenc=utf-8 &amp;quot;文件编码&amp;quot; set backspace=2 set mouse=a &amp;quot;启用鼠标&amp;quot; set selection=exclusive set selectmode=mouse,key set matchtime=5 set ignorecase &amp;quot;忽略大小写&amp;quot; set incsearch set hlsearch &amp;quot;高亮搜索项&amp;quot; set noexpandtab &amp;quot;不允许扩展table&amp;quot; set whichwrap+=&amp;lt;,&amp;gt;,h,l set autoread set cursorline &amp;quot;突出显示当前行&amp;quot; set cursorcolumn &amp;quot;突出显示当前列&amp;quot; set colorcolumn=80  配置 Vim 插件  在 .</description>
+    </item>
+    
+    <item>
+      <title>Combining PDFs at the command line</title>
+      <link>http://wiki.seispider.top/geek/pdf_combination/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/pdf_combination/</guid>
+      <description>Combining multiple PDFs into one file is easy. Just turn to the command line and run Ghostscript. It&amp;rsquo;s a quick and effective way to mash PDF files together.
+Introduction There may be times for whatever reason, that you need to mash a bunch of PDFs into a single file. While there are a number of Linux utilities &amp;ndash; both command line and graphical &amp;ndash; one of the quickest and most efficient ways to do this is with a piece of software called Ghostscript.</description>
+    </item>
+    
+    <item>
+      <title>Latex Notes</title>
+      <link>http://wiki.seispider.top/geek/latex_notes/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/latex_notes/</guid>
+      <description>Add a forced line break inside a table cell \begin{tabular}{|c|c|c|} \hline Foo bar &amp;amp; \begin{tabular}[x]{@{}c@{}}Foo\\bar\end{tabular} &amp;amp; Foo bar \\ \hline \end{tabular}  where x is either t, c, or b to force the desired vertical alignment.
+In case this is needed in more than a couple of places, it&amp;rsquo;s better to define a command
+\newcommand{\specialcell}[2][c]{% \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}  so the table line before can be one of
+Foo bar &amp;amp; \specialcell{Foo\\bar} &amp;amp; Foo bar \\ % vertically centered Foo bar &amp;amp; \specialcell[t]{Foo\\bar} &amp;amp; Foo bar \\ % aligned with top rule Foo bar &amp;amp; \specialcell[b]{Foo\\bar} &amp;amp; Foo bar \\ % aligned with bottom rule  Notice the @{} to suppress added space before and after the cell text.</description>
+    </item>
+    
+    <item>
+      <title>ZSH</title>
+      <link>http://wiki.seispider.top/geek/zsh_plugins/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/zsh_plugins/</guid>
+      <description>本文可归纳和总结oh-my-zsh的使用。
+SeisMan基础性总结</description>
+    </item>
+    
+  </channel>
+</rss>

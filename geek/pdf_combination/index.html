@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SeisPider&#39;s wiki</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-09T06:23:04 UTC">
+<title>Combining PDFs at the command line :: SeisPider&#39;s wiki</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/wiki.seispider.top";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/geek/pdf_combination/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="http://wiki.seispider.top">SeisPider&#39;s wiki</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/SeisPider/wiki.seispider"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://seispider.top/"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>SeisPider's personal page</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/geek/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/geek/"><i class='fa fa-edit' ></i> GEEK</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/geek/vimconfig/" class="dd-item">
+        <div>
+          <a href="/geek/vimconfig/">
+            适用于 Python 的 Vim 配置
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/pdf_combination/" class="dd-item active">
+        <div>
+          <a href="/geek/pdf_combination/">
+            Combining PDFs at the command line
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/latex_notes/" class="dd-item">
+        <div>
+          <a href="/geek/latex_notes/">
+            Latex Notes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/zsh_plugins/" class="dd-item">
+        <div>
+          <a href="/geek/zsh_plugins/">
+            ZSH
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/git/"><i class='fa fa-edit' ></i> GIT</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/git/fund-usage/" class="dd-item">
+        <div>
+          <a href="/git/fund-usage/">
+            Fundamental Usage
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/git/gitcommit/" class="dd-item">
+        <div>
+          <a href="/git/gitcommit/">
+            Git commits
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/linux/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/linux/"><i class='fa fa-edit' ></i> Linux</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/linux/shell/" class="dd-item">
+        <div>
+          <a href="/linux/shell/">
+            Several shell skills
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/linux/centos-grub/" class="dd-item">
+        <div>
+          <a href="/linux/centos-grub/">
+            CentOS recover grub
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/python/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/python/"><i class='fa fa-edit' ></i> Python</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/python/funda_python/" class="dd-item">
+        <div>
+          <a href="/python/funda_python/">
+            Fundamental Python
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/python/pep8/" class="dd-item">
+        <div>
+          <a href="/python/pep8/">
+            pep8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/webs/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/webs/"><i class='fa fa-edit' ></i> Web</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/webs/bookmark/" class="dd-item">
+        <div>
+          <a href="/webs/bookmark/">
+            Booksmarks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/geek/" >
+   GEEK</option> 
+      <option value="/geek/vimconfig/" >- 适用于 Python 的 Vim 配置</option>
+      <option value="/geek/pdf_combination/"  selected>- Combining PDFs at the command line</option>
+      <option value="/geek/latex_notes/" >- Latex Notes</option>
+      <option value="/geek/zsh_plugins/" >- ZSH</option>
+  
+    <option value="/git/" >
+   GIT</option>
+    <option value="/linux/" >
+   Linux</option>
+    <option value="/python/" >
+   Python</option>
+    <option value="/webs/" >
+   Web</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/wiki.seispider.top";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>Combining PDFs at the command line</h1>
+    
+    
+    
+    
+
+<p>Combining multiple PDFs into one file is easy. Just turn to the command line and run Ghostscript. It&rsquo;s a quick and effective way to mash PDF files together.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>There may be times for whatever reason, that you need to mash a bunch of PDFs into a single file. While there are a number of Linux utilities &ndash; both command line and graphical &ndash; one of the quickest and most efficient ways to do this is with a piece of software called Ghostscript.</p>
+
+<h2 id="haven-t-heard-of-ghostscript">Haven&rsquo;t heard of Ghostscript?</h2>
+
+<p>If that&rsquo;s you, then it&rsquo;s not surprising. Ghostscript is one of those little-known, unsung tools which you come to appreciate when you have to use it. Ghostscript is a command line application that lets you view, print, and (to a small degree) manipulate Postscript and PDF files. You can also use it to convert those files to other formats. The best part is that Ghostscript comes bundled with most Linux distributions. You don&rsquo;t need to install any new software.</p>
+
+<h1 id="combining-pdfs">Combining PDFs</h1>
+
+<p>Just open a terminal window and type something like the following:</p>
+
+<pre><code>gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf pdffile1.pdf pdffile2.pdf
+</code></pre>
+
+<p>Here’s what all of those options mean:</p>
+
+<ul>
+<li>-gs &ndash; starts Ghostscript</li>
+<li>-dBATCH &ndash; once the PDF files have been combined, stop running. If you don’t include this option, Ghostscript will just keep running</li>
+<li>-dNOPAUSE &ndash; forces Ghostscript to process each file without pausing for confirmation</li>
+<li>-q &ndash; stops Ghostscript from displaying messages while it works</li>
+<li>-sDEVICE=pdfwrite &ndash; uses Ghostscript&rsquo;s PDF writer to work on the files</li>
+<li>-sOutputFile=output.pdf &ndash; saves the resulting PDF file with the name that you specified, for example output.pdf
+Obviously, pdffile1.pdf and pdffile2.pdf are the names of the PDF files that you want to combine. You’re not limited to two files. And you’re not limited to the commands that are listed above. You can add any of Ghostscript’s PDF options to the command line — see the Ghostscript documentation for details.</li>
+</ul>
+
+<h1 id="drawbacks">Drawbacks</h1>
+
+<p>Using Ghostscript has its drawbacks. It spits out a bare bones PDF. And that file will be large. By default, Ghostscript doesn&rsquo;t compress PDFs. To get around that, you really need to use some of Ghostscript&rsquo;s PDF options,</p>
+
+<p>As well, some people may find typing long, dense strings of options at the command line to be a bit of a chore.</p>
+
+<h1 id="saving-keystrokes">Saving keystrokes</h1>
+
+<p>You can avoid having to type a lot of text every time you want to combine PDFs by creating a command that encapsulates all of the Ghostscript options that you want to use. To do this, open the file .bashrc (found in your /home directory) in a text editor. Then, add the following at the end of the file:</p>
+
+<pre><code>alias pdfmerge='gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=./output.pdf'
+</code></pre>
+
+<p>Again, you&rsquo;re not limited to the command string above. You can use any of Ghostscript&rsquo;s PDF options.</p>
+
+<p>When you want to combine PDF files, just type pdfmerge followed by the names of the files that you want to mash together. The resulting file will be named output.pdf, and will be saved to your /home directory.</p>
+
+<p>Final thoughts
+While you might only use this feature rarely, Ghostscript&rsquo;s ability to combine PDF files is quick, efficient, and effective. It just demonstrates how powerful the command line can be.</p>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/geek/vimconfig/" title="适用于 Python 的 Vim 配置"> <i class="fa fa-chevron-left"></i><label>适用于 Python 的 Vim 配置</label></a>
+    <a class="nav nav-next" href="/geek/latex_notes/" title="Latex Notes" style="margin-right: 0px;"><label>Latex Notes</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 02/08/2017
+    </div>
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/GEEK/PDF_combination.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

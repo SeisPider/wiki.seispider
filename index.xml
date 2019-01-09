@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/</link>
+    <description>Recent content on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 28 Dec 2018 16:24:01 +0800</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Several shell skills</title>
+      <link>http://wiki.seispider.top/linux/shell/</link>
+      <pubDate>Fri, 28 Dec 2018 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/linux/shell/</guid>
+      <description> Awk related  在 awk 中使用 shell变量: 设置 awk 变量传导 shell a=1 echo $a awk -v b=&amp;quot;$a&amp;quot; &#39;BEGIN {print b}&#39;   </description>
+    </item>
+    
+    <item>
+      <title>适用于 Python 的 Vim 配置</title>
+      <link>http://wiki.seispider.top/geek/vimconfig/</link>
+      <pubDate>Sat, 05 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/vimconfig/</guid>
+      <description>首先，安装 YouCompleteMe 要求 Vim 版本号在7.4.1578，然而 yum 源中的 Vim 版本为7.3.160。因此自行编译Vim。
+Vim8 的编译  克隆仓库获取最新 Vim 版本,本地版本在src中。
+git clone https://github.com/vim/vim.git  参考网页编译更新 Vim 版本
+  配置 Vim 基本属性 &amp;quot;去掉vi的一致性&amp;quot; set nocompatible &amp;quot;显示行号&amp;quot; set number set relativenumber &amp;quot; 隐藏滚动条&amp;quot; set guioptions-=r set guioptions-=L set guioptions-=b &amp;quot;隐藏顶部标签栏&amp;quot; set showtabline=0 &amp;quot;设置字体&amp;quot; set guifont=Monaco:h13 syntax on &amp;quot;开启语法高亮&amp;quot; set nowrap &amp;quot;设置不折行&amp;quot; set fileformat=unix &amp;quot;设置以unix的格式保存文件&amp;quot; set cindent &amp;quot;设置C样式的缩进格式&amp;quot; set tabstop=4 &amp;quot;设置table长度&amp;quot; set shiftwidth=4 &amp;quot;同上&amp;quot; set showmatch &amp;quot;显示匹配的括号&amp;quot; set scrolloff=5 &amp;quot;距离顶部和底部5行&amp;quot; set laststatus=2 &amp;quot;命令行为两行&amp;quot; set fenc=utf-8 &amp;quot;文件编码&amp;quot; set backspace=2 set mouse=a &amp;quot;启用鼠标&amp;quot; set selection=exclusive set selectmode=mouse,key set matchtime=5 set ignorecase &amp;quot;忽略大小写&amp;quot; set incsearch set hlsearch &amp;quot;高亮搜索项&amp;quot; set noexpandtab &amp;quot;不允许扩展table&amp;quot; set whichwrap+=&amp;lt;,&amp;gt;,h,l set autoread set cursorline &amp;quot;突出显示当前行&amp;quot; set cursorcolumn &amp;quot;突出显示当前列&amp;quot; set colorcolumn=80  配置 Vim 插件  在 .</description>
+    </item>
+    
+    <item>
+      <title>Booksmarks</title>
+      <link>http://wiki.seispider.top/webs/bookmark/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/webs/bookmark/</guid>
+      <description>[TOC]
+Bookmarks bar Latex LaTeX - 维基教科书，自由的教学读本
+First_Latex - Online LaTeX Editor ShareLaTeX
+Beamer - ShareLaTeX, Online LaTeX Editor
+Greek Alphabet in LaTeX
+\normalsize \textsc{Module - Overleaf
+mohu.org/info/symbols/symbols.htm
+Detexify LaTeX handwritten symbol recognition
+python MSNoise 1.4 Released ! | MSNoise
+Anaconda Distribution | Continuum Analytics: Documentation
+Overview — Python 3.5.2 documentation
+分享几个实用的python命令行工具 | 阿小信的博客
+The Hitchhiker’s Guide to Python! — The Hitchhiker&amp;rsquo;s Guide to Python
+Matplotlib 教程 | 始终</description>
+    </item>
+    
+    <item>
+      <title>CentOS recover grub</title>
+      <link>http://wiki.seispider.top/linux/centos-grub/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/linux/centos-grub/</guid>
+      <description> 恢复Windows开机引导 在已装有Windows 10的电脑上装配CentOS 7后重启计算机发现没有windows 10 启动项
+解决步骤:  安装utfs-3g以识别和读取windows文件系统  wget -O /etc/yum.repos.d/epel.repo http:mirrors.aliyun.com/repo/epel-7.repo #加源 sudo yum update; sudo yum install ntfs3g  系统自动识别和添加启动项(需root权限)  grub2-mkconfig -o /boot/grubs/grub.cfg  restart即可恢复windows启动项  恢复CentOS 7开机引导 在已装有CentOS 7的计算机上发现没有CentOS 7启动项
+解决步骤：  利用U盘进入CentOS安装界面，开机选择trouble shooting 疑难解答选项
+ 选择rescue a centos system,按tab后选择continue,选择ok
+ 进入命令行界面：
+chroot/mnt/sysimage /sbin/grub2-install/dev/sda #安装grub2  restart即恢复CentOS 7开机引导，Windows的引导即可按照前节所述恢复
+  修改历史：  2016-12-05：参考百度经验 的初次版本  </description>
+    </item>
+    
+    <item>
+      <title>Combining PDFs at the command line</title>
+      <link>http://wiki.seispider.top/geek/pdf_combination/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/pdf_combination/</guid>
+      <description>Combining multiple PDFs into one file is easy. Just turn to the command line and run Ghostscript. It&amp;rsquo;s a quick and effective way to mash PDF files together.
+Introduction There may be times for whatever reason, that you need to mash a bunch of PDFs into a single file. While there are a number of Linux utilities &amp;ndash; both command line and graphical &amp;ndash; one of the quickest and most efficient ways to do this is with a piece of software called Ghostscript.</description>
+    </item>
+    
+    <item>
+      <title>Fundamental Python</title>
+      <link>http://wiki.seispider.top/python/funda_python/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/python/funda_python/</guid>
+      <description>迭代和解析 列表嵌套循环 [ expression for target1 in iterables [if condition1] for target2 in iterables [if condition2] for target3 in iterables [if condition3] ......] 例如:
+&amp;gt;&amp;gt;&amp;gt; [(x, y, z) for x in range(4) if x % 2 ==0 for y in range(4，9) if z % 2 ==0 for z in range(9，11) if z % 2 ==0] [(0, 4, 10), (0, 6, 10), (0, 8, 10), (2, 4, 10), (2, 6, 10), (2, 8, 10)] 列表解析和map 以下三种方式均能获得myfile中字符并去除&#39;\n&#39;</description>
+    </item>
+    
+    <item>
+      <title>Fundamental Usage</title>
+      <link>http://wiki.seispider.top/git/fund-usage/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/git/fund-usage/</guid>
+      <description>版本回退  查看版本log
+$ git log --pretty=oneline 3628164fb26d48395383f8f31179f24e0882e1e0 append GPL  3628164fb26d48395383f8f31179f24e0882e1e0是版本号。
+ 版本回退
+$ git reset --hard HEAD^  HEAD表示当前版本，HEAD^表示上一个版本，HEAD~100表示前100个版本。 或者&amp;ndash;hard后面可以加版本号。
+$ git reset --hard 3628164  写版本号前多少位没关系，关键是能够定位到只有一个版本。
+  Note:git reflog 记录了用户所有的操作。
+删除文件 通常利用rm删除了文件，此时可以有两种选择：
+ 在版本库中删除文件git rm file 删错了，恢复文件git checkout --file git checkout其实是用版本库里的版本替换工作区的版本，无论工作区是修改还是删除，都可以“一键还原”。  从coding.net克隆仓库 git clone git@git.</description>
+    </item>
+    
+    <item>
+      <title>Git commits</title>
+      <link>http://wiki.seispider.top/git/gitcommit/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/git/gitcommit/</guid>
+      <description>Function of Commit message  Provide more historical information and readly for quickly checking development process. bash git log &amp;lt;last tag&amp;gt; HEAD --pretty=format:%s  Above commend can provide brief information of project Filter information in backtracking development history  git log &amp;lt;last release&amp;gt; HEAD --grep feature  Above commend can only check the new features Generate Change log directly based on commits.conventional-changelog  Format of Commit message Standard commits are consisted of tree components: Header, Body and Footer</description>
+    </item>
+    
+    <item>
+      <title>Latex Notes</title>
+      <link>http://wiki.seispider.top/geek/latex_notes/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/latex_notes/</guid>
+      <description>Add a forced line break inside a table cell \begin{tabular}{|c|c|c|} \hline Foo bar &amp;amp; \begin{tabular}[x]{@{}c@{}}Foo\\bar\end{tabular} &amp;amp; Foo bar \\ \hline \end{tabular}  where x is either t, c, or b to force the desired vertical alignment.
+In case this is needed in more than a couple of places, it&amp;rsquo;s better to define a command
+\newcommand{\specialcell}[2][c]{% \begin{tabular}[#1]{@{}c@{}}#2\end{tabular}}  so the table line before can be one of
+Foo bar &amp;amp; \specialcell{Foo\\bar} &amp;amp; Foo bar \\ % vertically centered Foo bar &amp;amp; \specialcell[t]{Foo\\bar} &amp;amp; Foo bar \\ % aligned with top rule Foo bar &amp;amp; \specialcell[b]{Foo\\bar} &amp;amp; Foo bar \\ % aligned with bottom rule  Notice the @{} to suppress added space before and after the cell text.</description>
+    </item>
+    
+    <item>
+      <title>ZSH</title>
+      <link>http://wiki.seispider.top/geek/zsh_plugins/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/geek/zsh_plugins/</guid>
+      <description>本文可归纳和总结oh-my-zsh的使用。
+SeisMan基础性总结</description>
+    </item>
+    
+    <item>
+      <title>pep8</title>
+      <link>http://wiki.seispider.top/python/pep8/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/python/pep8/</guid>
+      <description>PEP8是Python官方给出的编程规范，用以指导Python代码写作。
+Pep8检查工具 autopep8可用于检查代码中与PEP8不相符的部分，通过指定-i选项可直接修改源代码。
+pep8仅用于检测与PEP8不相符的代码部分并输出检测报告。
+pyflakes可检测Python源码中简单的语法错误。
+Pylint可同时检测Pep8的源码风格与语法错误。但对于一般小型脚本而言，检测标准过于严苛。
+安装代码：
+pip install -upgrade autopep8 pep8 pyflakes  sudo yum install pylint  PEP8风格介绍 完整的风格介绍参见：
+PEP8&amp;ndash;Style Guide for Python Code
+PEP8&amp;ndash;编程规范中文指南
+本文仅记录较常错误的项。
+续行缩进 悬挂缩进准则：第一行不应该包括参数，并且在续行中需要再缩进一级以便清楚表示。 正确范例：
+# 同开始分界符(左括号)对齐 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行多缩进一级以同其他代码区别 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) # 悬挂缩进需要多缩进一级 foo = long_function_name( var_one, var_two, var_three, var_four) 错误的范例：
+# 采用垂直对齐时第一行不应该有参数 foo = long_function_name(var_one, var_two, var_three, var_four) # 续行并没有被区分开，因此需要再缩进一级 def long_function_name( var_one, var_two, var_three, var_four): print(var_one) 多行if语句 # 不采用额外缩进 if (this_is_one_thing and that_is_another_thing): do_something() # 增加一行注释，在编辑器中显示时能有所区分 # supporting syntax highlighting.</description>
+    </item>
+    
+  </channel>
+</rss>

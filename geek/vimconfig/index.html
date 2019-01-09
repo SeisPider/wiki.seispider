@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SeisPider&#39;s wiki</title>
+    
+      <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="revised" content="2019-01-09T06:23:04 UTC">
+<title>适用于 Python 的 Vim 配置 :: SeisPider&#39;s wiki</title>
+<link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link href="/css/font-awesome.min.css" rel="stylesheet">
+<link href="/css/nucleus.css" rel="stylesheet">
+<link href="/theme-flex/style.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/bootstrap.min.css">
+<script src="/js/jquery-2.x.min.js"></script>
+<script type="text/javascript">
+      var baseurl = "http:\/\/wiki.seispider.top";
+</script>
+<meta name="description" content="">
+
+
+
+    
+  </head>
+  <body data-url="/geek/vimconfig/">
+    
+      <header>
+  <div class="logo">
+    
+	
+  
+    <a class="baselink" href="http://wiki.seispider.top">SeisPider&#39;s wiki</a>
+  
+
+
+  </div>
+  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
+    <nav class="shortcuts">
+            <li class="" role="">
+                <a href="https://github.com/SeisPider/wiki.seispider"  rel="noopener">
+                  <i class='fa fa-github'></i> <label>Github repo</label>
+                </a>
+            </li>
+            <li class="" role="">
+                <a href="https://seispider.top/"  rel="noopener">
+                  <i class='fa fa-bookmark'></i> <label>SeisPider's personal page</label>
+                </a>
+            </li>
+    </nav>
+</header>
+<article>
+  <aside>
+    <ul class="menu">
+          <li data-nav-id="/" class="dd-item">
+          <a href="/">
+            <i class="fa fa-fw fa-home"></i>
+          </a>
+          </li>
+    <li data-nav-id="/geek/" class="dd-item parent haschildren
+        ">
+      <div>
+      <a href="/geek/"><i class='fa fa-edit' ></i> GEEK</a>
+            <i class="fa fa-angle-down fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/geek/vimconfig/" class="dd-item active">
+        <div>
+          <a href="/geek/vimconfig/">
+            适用于 Python 的 Vim 配置
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/pdf_combination/" class="dd-item">
+        <div>
+          <a href="/geek/pdf_combination/">
+            Combining PDFs at the command line
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/latex_notes/" class="dd-item">
+        <div>
+          <a href="/geek/latex_notes/">
+            Latex Notes
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/geek/zsh_plugins/" class="dd-item">
+        <div>
+          <a href="/geek/zsh_plugins/">
+            ZSH
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/git/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/git/"><i class='fa fa-edit' ></i> GIT</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/git/fund-usage/" class="dd-item">
+        <div>
+          <a href="/git/fund-usage/">
+            Fundamental Usage
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/git/gitcommit/" class="dd-item">
+        <div>
+          <a href="/git/gitcommit/">
+            Git commits
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/linux/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/linux/"><i class='fa fa-edit' ></i> Linux</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/linux/shell/" class="dd-item">
+        <div>
+          <a href="/linux/shell/">
+            Several shell skills
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/linux/centos-grub/" class="dd-item">
+        <div>
+          <a href="/linux/centos-grub/">
+            CentOS recover grub
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/python/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/python/"><i class='fa fa-edit' ></i> Python</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/python/funda_python/" class="dd-item">
+        <div>
+          <a href="/python/funda_python/">
+            Fundamental Python
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+      <li data-nav-id="/python/pep8/" class="dd-item">
+        <div>
+          <a href="/python/pep8/">
+            pep8
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/webs/" class="dd-item haschildren
+        ">
+      <div>
+      <a href="/webs/"><i class='fa fa-edit' ></i> Web</a><i class="fa fa-angle-right fa-lg category-icon"></i><i class="fa fa-circle-thin read-icon"></i>
+      </div>
+        <ul>
+      <li data-nav-id="/webs/bookmark/" class="dd-item">
+        <div>
+          <a href="/webs/bookmark/">
+            Booksmarks
+          </a><i class="fa fa-circle-thin read-icon"></i>
+        </div>
+    </li>
+        </ul>
+    </li>
+
+
+
+
+    </ul>
+    <section>
+    </section>
+  </aside>
+  <section class="page">
+    
+    <div class="nav-select">
+      <center>Navigation : 
+        <select onchange="javascript:location.href = this.value;">
+          
+    <option value="/geek/" >
+   GEEK</option> 
+      <option value="/geek/vimconfig/"  selected>- 适用于 Python 的 Vim 配置</option>
+      <option value="/geek/pdf_combination/" >- Combining PDFs at the command line</option>
+      <option value="/geek/latex_notes/" >- Latex Notes</option>
+      <option value="/geek/zsh_plugins/" >- ZSH</option>
+  
+    <option value="/git/" >
+   GIT</option>
+    <option value="/linux/" >
+   Linux</option>
+    <option value="/python/" >
+   Python</option>
+    <option value="/webs/" >
+   Web</option>
+
+
+
+        </select>
+      </center>
+    </div>
+      <div>
+        <div class="searchbox">
+          <input data-search-input id="search-by" type="text" placeholder="Search...">
+        </div>
+        <script type="text/javascript" src="/js/lunr.min.js"></script>
+        <script type="text/javascript" src="/js/auto-complete.js"></script>
+        <link href="/css/auto-complete.css" rel="stylesheet">
+        <script type="text/javascript">
+          
+              var baseurl = "http:\/\/wiki.seispider.top";
+          
+        </script>
+        <script type="text/javascript" src="/js/search.js"></script>
+      </div>
+    
+
+    <h1>适用于 Python 的 Vim 配置</h1>
+    
+    
+    
+    
+
+<p>首先，安装 <a href="https://github.com/Valloric/YouCompleteMe">YouCompleteMe</a> 要求 Vim
+版本号在7.4.1578，然而 yum 源中的 Vim 版本为7.3.160。因此自行编译Vim。</p>
+
+<h1 id="vim8-的编译">Vim8 的编译</h1>
+
+<ul>
+<li><p>克隆仓库获取最新 Vim 版本,本地版本在src中。</p>
+
+<pre><code>git clone https://github.com/vim/vim.git 
+</code></pre></li>
+
+<li><p><a href="http://maoxiaomeng.com/2016/10/12/vim%E7%BC%96%E8%AF%91%E6%96%B0%E7%89%88%E6%9C%AC/">参考网页</a>编译更新 Vim 版本</p></li>
+</ul>
+
+<h1 id="配置-vim-基本属性">配置 Vim 基本属性</h1>
+
+<pre><code>&quot;去掉vi的一致性&quot;
+set nocompatible
+&quot;显示行号&quot;
+set number
+set relativenumber
+&quot; 隐藏滚动条&quot;    
+set guioptions-=r 
+set guioptions-=L
+set guioptions-=b
+&quot;隐藏顶部标签栏&quot;
+set showtabline=0
+&quot;设置字体&quot;
+set guifont=Monaco:h13         
+syntax on    &quot;开启语法高亮&quot;
+set nowrap    &quot;设置不折行&quot;
+set fileformat=unix    &quot;设置以unix的格式保存文件&quot;
+set cindent        &quot;设置C样式的缩进格式&quot;
+set tabstop=4    &quot;设置table长度&quot;
+set shiftwidth=4        &quot;同上&quot;
+set showmatch    &quot;显示匹配的括号&quot;
+set scrolloff=5        &quot;距离顶部和底部5行&quot;
+set laststatus=2    &quot;命令行为两行&quot;
+set fenc=utf-8      &quot;文件编码&quot;
+set backspace=2
+set mouse=a        &quot;启用鼠标&quot;
+set selection=exclusive
+set selectmode=mouse,key
+set matchtime=5
+set ignorecase        &quot;忽略大小写&quot;
+set incsearch
+set hlsearch        &quot;高亮搜索项&quot;
+set noexpandtab        &quot;不允许扩展table&quot;
+set whichwrap+=&lt;,&gt;,h,l
+set autoread
+set cursorline        &quot;突出显示当前行&quot;
+set cursorcolumn        &quot;突出显示当前列&quot;
+set colorcolumn=80   
+</code></pre>
+
+<h1 id="配置-vim-插件">配置 Vim 插件</h1>
+
+<ul>
+<li>在 .vimrc 文件中配置 Vundle 安装插件</li>
+</ul>
+
+<pre><code>filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+&quot;git interface
+Plugin 'tpope/vim-fugitive'
+
+&quot;filesystem
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'kien/ctrlp.vim' 
+&quot;html
+&quot;  isnowfy only compatible with python not python3
+Plugin 'isnowfy/python-vim-instant-markdown'
+Plugin 'jtratner/vim-flavored-markdown'
+Plugin 'suan/vim-instant-markdown'
+Plugin 'nelstrom/vim-markdown-preview'
+&quot;python sytax checker
+Plugin 'nvie/vim-flake8'
+Plugin 'vim-scripts/Pydiction'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+
+&quot;auto-completion stuff
+&quot;Plugin 'klen/python-mode'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'klen/rope-vim'
+&quot;Plugin 'davidhalter/jedi-vim'
+Plugin 'ervandew/supertab'
+&quot;&quot;code folding
+Plugin 'tmhedberg/SimpylFold'
+
+&quot;Colors!!!
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'jnurmine/Zenburn'
+Plugin 'Lokaltog/vim-powerline'
+call vundle#end()
+filetype plugin indent on
+</code></pre>
+
+<ul>
+<li>进入 Vim 中并执行命令 <code>:VundleInstall</code> 或直接在命令行键入<code>vim +PluginInstall +qall</code>
+以安装插件</li>
+</ul>
+
+<h1 id="youcompleteme-配置">YouCompleteMe 配置</h1>
+
+<p>仅利用 Vundle 安装 YCM 并不能生效，需要对 YCM 进行编译配置。
+- 编译 <a href="https://github.com/Valloric/YouCompleteMe">YCM</a></p>
+
+<pre><code>cd ~/.vim/bundle/YouCompleteMe
+./install.py
+</code></pre>
+
+<ul>
+<li>将模板配置文件中提取出来并进行设置，<a href="http://zuyunfei.com/2013/05/16/killer-plugin-of-vim-youcompleteme/">参考</a>
+<code>
+cp ~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
+</code></li>
+</ul>
+
+<p>并在 .vimrc 中添加语句</p>
+
+<pre><code>let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+</code></pre>
+
+<h1 id="设置颜色主题">设置颜色主题</h1>
+
+<ul>
+<li>从<a href="https://github.com/altercation/vim-colors-solarized">Github</a>或<code>src/vim-colors-solarized</code> 中获取颜色配置文件</li>
+<li>在 .vimrc 中添加配置</li>
+</ul>
+
+
+    
+    
+        <div class="chevrons">
+    <div id="navigation">
+<a class="nav nav-prev" href="/geek/" title="GEEK"> <i class="fa fa-chevron-left"></i><label>GEEK</label></a>
+    <a class="nav nav-next" href="/geek/pdf_combination/" title="Combining PDFs at the command line" style="margin-right: 0px;"><label>Combining PDFs at the command line</label><i class="fa fa-chevron-right"></i></a></div>
+  </div>
+
+  </section>
+</article>
+
+<footer>
+
+<div class="footline">
+    
+
+    
+
+    
+    <div class="date">
+        <i class='fa fa-calendar'></i> Last update on 05/08/2017
+    </div>
+    
+
+    
+    <div class="github-link">
+      <a href="https://github.com/vjeantet/hugo-theme-docdock/edit/master/exampleSite/content/GEEK/VimConfig.md" target="blank"><i class="fa fa-code-fork"></i>
+        Improve this page</a>
+    </div>
+    
+  </div>
+
+
+	<div>
+
+
+  
+    Create a content/_footer.md file to customize the footer content
+  
+
+
+
+	</div>
+</footer>
+
+<script src="/js/clipboard.min.js"></script>
+
+<link href="/css/featherlight.min.css" rel="stylesheet">
+<script src="/js/featherlight.min.js"></script>
+
+
+
+<script src="/theme-flex/script.js"></script>
+
+
+    
+
+    
+    
+
+    
+  </body>
+</html>

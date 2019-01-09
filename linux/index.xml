@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on SeisPider&#39;s wiki</title>
+    <link>http://wiki.seispider.top/linux/</link>
+    <description>Recent content in Linux on SeisPider&#39;s wiki</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 10:36:24 +0200</lastBuildDate>
+    
+	<atom:link href="http://wiki.seispider.top/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Several shell skills</title>
+      <link>http://wiki.seispider.top/linux/shell/</link>
+      <pubDate>Fri, 28 Dec 2018 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/linux/shell/</guid>
+      <description> Awk related  在 awk 中使用 shell变量: 设置 awk 变量传导 shell a=1 echo $a awk -v b=&amp;quot;$a&amp;quot; &#39;BEGIN {print b}&#39;   </description>
+    </item>
+    
+    <item>
+      <title>CentOS recover grub</title>
+      <link>http://wiki.seispider.top/linux/centos-grub/</link>
+      <pubDate>Wed, 02 Aug 2017 16:24:01 +0800</pubDate>
+      
+      <guid>http://wiki.seispider.top/linux/centos-grub/</guid>
+      <description> 恢复Windows开机引导 在已装有Windows 10的电脑上装配CentOS 7后重启计算机发现没有windows 10 启动项
+解决步骤:  安装utfs-3g以识别和读取windows文件系统  wget -O /etc/yum.repos.d/epel.repo http:mirrors.aliyun.com/repo/epel-7.repo #加源 sudo yum update; sudo yum install ntfs3g  系统自动识别和添加启动项(需root权限)  grub2-mkconfig -o /boot/grubs/grub.cfg  restart即可恢复windows启动项  恢复CentOS 7开机引导 在已装有CentOS 7的计算机上发现没有CentOS 7启动项
+解决步骤：  利用U盘进入CentOS安装界面，开机选择trouble shooting 疑难解答选项
+ 选择rescue a centos system,按tab后选择continue,选择ok
+ 进入命令行界面：
+chroot/mnt/sysimage /sbin/grub2-install/dev/sda #安装grub2  restart即恢复CentOS 7开机引导，Windows的引导即可按照前节所述恢复
+  修改历史：  2016-12-05：参考百度经验 的初次版本  </description>
+    </item>
+    
+  </channel>
+</rss>
